@@ -1,4 +1,4 @@
-# Chiro Grocery E-commerce Platform (Portfolio Project)
+# Chiro Grocery E-commerce Platform 
 
 <!-- ![Chiro Logo or Screenshot] (Replace with actual image) -->
 
