@@ -1,5 +1,5 @@
 // import { Btn } from "./Btn";
-import { Menu, Sprout, X } from "lucide-react";
+import { Menu, ShoppingCart, Sprout, X } from "lucide-react";
 import Btn from "./Btn";
 import { useState } from "react";
 
@@ -14,16 +14,23 @@ export function NavBar() {
     <>
       <div className="shadow-sm w-full fixed top-0 left-0">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-          <div className="text-custom-light-green font-bold font-urbanist text-2xl flex cursor-pointer items-center">
-            <span className="mr-1 text-custom-orange ">
+          <div className="text-custom-light-green font-bold font-urbanist text-2xl flex cursor-pointer items-center  hover:text-custom-light-green">
+            <span className="mr-1 text-custom-orange cursor-pointer hover:text-custom-light-green ">
               <Sprout size={32} />
             </span>
             Chiro
           </div>
           <div
             onClick={() => setOpen(!open)}
-            className="absolute right-8 top-6 cursor-pointer md:hidden"
+            className="absolute right-8 top-6 cursor-pointer md:hidden flex space-x-3"
           >
+            <span className="text-custom-light-green font-bold font-urbanist text-2xl">
+              <ShoppingCart
+                size={24}
+                className="text-custom-light-green ml-6 cursor-pointer hover:text-custom-orange"
+              />
+            </span>
+
             {open ? <X /> : <Menu />}
           </div>
           <ul
@@ -41,6 +48,10 @@ export function NavBar() {
                 </a>
               </li>
             ))}
+            <ShoppingCart
+              size={24}
+              className="text-custom-light-green ml-6 hidden md:block cursor-pointer hover:text-custom-orange "
+            />
             <Btn>Sign In</Btn>
           </ul>
         </div>
