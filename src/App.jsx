@@ -1,15 +1,12 @@
+// import NavBar from "./components/NavBar";
+
+import { NavBar } from "./components/NavBar";
+
 function App() {
   return (
-    <>
-      <div>
-        <h1
-          className="text-4xl font-extrabold
-         text-center text-custom-light-green font-urbanist"
-        >
-          Hello World
-        </h1>
-      </div>
-    </>
+    <div className="h-screen w-full bg-custom-bg">
+      <NavBar />
+    </div>
   );
 }
 
