@@ -5,7 +5,7 @@ import { NavBar } from "./components/NavBar";
 
 function App() {
   return (
-    <div className="h-screen w-full bg-custom-bg flex flex-col">
+    <div className="h-screen w-full bg-white flex flex-col">
       <NavBar />
       <ChiroBanner />
     </div>

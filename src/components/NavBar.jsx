@@ -50,7 +50,7 @@ export function NavBar() {
             ))}
             <ShoppingCart
               size={24}
-              className="text-custom-light-green ml-6 hidden md:block cursor-pointer hover:text-custom-orange "
+              className="text-custom-light-green mx-6 hidden md:block cursor-pointer hover:text-custom-orange "
             />
             <Btn>Sign In</Btn>
           </ul>
