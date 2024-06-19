@@ -2,6 +2,7 @@ import ChiroBanner from "./components/ChiroBanner";
 import { NavBar } from "./components/NavBar";
 import ProductSection from "./sections/ProductSection";
 import PromoBanner from "./components/PromoBanner";
+import FooterSection from "./sections/FooterSection";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <ChiroBanner />
       <ProductSection />
       <PromoBanner />
-    
+      <FooterSection />
     </div>
   );
 }
