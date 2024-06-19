@@ -1,8 +1,7 @@
-// import NavBar from "./components/NavBar";
-
 import ChiroBanner from "./components/ChiroBanner";
 import { NavBar } from "./components/NavBar";
 import ProductSection from "./sections/ProductSection";
+import PromoBanner from "./components/PromoBanner";
 
 function App() {
   return (
@@ -10,6 +9,8 @@ function App() {
       <NavBar />
       <ChiroBanner />
       <ProductSection />
+      <PromoBanner />
+    
     </div>
   );
 }
