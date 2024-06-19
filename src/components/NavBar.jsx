@@ -12,7 +12,7 @@ export function NavBar() {
   let [open, setOpen] = useState(false);
   return (
     <>
-      <div className="shadow-sm w-full fixed top-0 left-0">
+      <div className="shadow-sm-light w-full fixed top-0 left-0">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div className="text-custom-light-green font-bold font-urbanist text-2xl flex cursor-pointer items-center  hover:text-custom-light-green">
             <span className="mr-1 text-custom-orange cursor-pointer hover:text-custom-light-green ">
