@@ -1,15 +1,18 @@
+import ChiroBanner from "./components/ChiroBanner";
+import { NavBar } from "./components/NavBar";
+import ProductSection from "./sections/ProductSection";
+import PromoBanner from "./components/PromoBanner";
+import FooterSection from "./sections/FooterSection";
+
 function App() {
   return (
-    <>
-      <div>
-        <h1
-          className="text-4xl font-extrabold
-         text-center text-custom-light-green font-urbanist"
-        >
-          Hello World
-        </h1>
-      </div>
-    </>
+    <div className="h-screen w-full bg-white flex flex-col">
+      <NavBar />
+      <ChiroBanner />
+      <ProductSection />
+      <PromoBanner />
+      <FooterSection />
+    </div>
   );
 }
 
